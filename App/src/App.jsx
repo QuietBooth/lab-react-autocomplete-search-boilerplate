@@ -19,7 +19,7 @@ function App() {
     setResults(suggestion);
   };
 
-  const displayList = () => (
+  const resultList = () => (
 
     results.map((suggestion, index) => (
       <div key={index} className="suggestions">
@@ -63,7 +63,7 @@ function App() {
       <button id="btn" className="search-button">
         S E A R C H
       </button>
-      <div className="results">{displayList()}</div>
+      <div className="results">{resultList()}</div>
     </div>
   );
 }
